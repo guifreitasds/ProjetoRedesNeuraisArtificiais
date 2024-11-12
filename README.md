@@ -19,9 +19,9 @@ $ source <nome_do_env>/scripts(Windows) ou bin(MacOS)/activate
 $ pip install -r requirements.txt
 
 ### Execute the app in dev mode
-$ python manage.py runserver
+$ python src/reconhecimento.py
 
-### The server will start at port:8000 - go to <http://localhost:8000>
+### The server will start at window
 
 ### 🛠 Techs
 

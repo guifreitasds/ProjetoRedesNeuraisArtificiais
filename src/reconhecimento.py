@@ -2,8 +2,8 @@ import cv2
 from deepface import DeepFace
 
 # Lista de imagens conhecidas e nomes associados
-known_face_images = ["eugui.jpeg"]
-known_face_names = ["Guilherme Freitas"]
+known_face_images = ["./imagesdb/eugui.jpeg", "./imagesdb/dido.jpeg", "./imagesdb/dido2.jpeg"]
+known_face_names = ["Guilherme Freitas", "Danilo Pereira", "Danilo Pereira"]
 #model_name = "VGG-Face"
 #model_name = "OpenFace"
 #model_name = "DeepID"
