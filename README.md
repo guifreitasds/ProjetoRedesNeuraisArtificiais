@@ -13,13 +13,16 @@ $ cd ProjetoRedesNeuraisArtificiais
 $ python -m venv <env_name>
 
 ### Activate your venv
-$ source <nome_do_env>/scripts(Windows) ou bin(MacOS)/activate
+$ source <nome_do_env>/scripts/activate(Windows) ou bin(MacOS)/activate
 
 ### Install the packages
 $ pip install -r requirements.txt
 
+### Go to the source folder
+$ cd src
+
 ### Execute the app in dev mode
-$ python src/reconhecimento.py
+$ python reconhecimento.py
 
 ### The server will start at window
 
@@ -29,36 +32,37 @@ The following techs were used to make this project:
 
 * [Python](https://www.python.org/)
 
-### Author
+### Authors
 ---
-<div style="display: flex; justify-content: space-evenly"><a href="https://github.com/guifreitasds">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99972010?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Guilherme Freitas</b></sub></a> <a href="https://github.com/guifreitasds" title="Rocketseat">
-</a>
+<div style="display: flex; justify-content: space-evenly">
+    <a href="https://github.com/guifreitasds">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99972010?v=4" width="100px;" alt=""/>
+        <br>
+        <sub><b>Guilherme Freitas</b></sub></a> <a href="https://github.com/guifreitasds" title="Rocketseat">
+    </a>
 
 <a href="https://github.com/IamDaniloP">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/115164518?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Danilo Pereira</b></sub></a> <a href="https://github.com/IamDaniloP" title="Rocketseat"></a>
+    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/115164518?v=4" width="100px;" alt=""/>
+    <br />
+    <sub><b>Danilo Pereira</b></sub></a> <a href="https://github.com/IamDaniloP" title="Rocketseat"></a>
 </a>
 
 <a href="https://github.com/Cristiano-woody">
- <img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/v2/D4D03AQHo2B0t5J16ww/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721675570518?e=1736985600&v=beta&t=0M4YGsGv4O122OPiePwtKN5D9VBoxcIbRsAz1mzXRQI" width="100px;" alt=""/>
- <br />
- <sub><b>Cristiano Nogueira</b></sub></a> <a href="https://github.com/Cristiano-woody" title="Rocketseat"></a>
+    <img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/v2/D4D03AQHo2B0t5J16ww/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721675570518?e=1736985600&v=beta&t=0M4YGsGv4O122OPiePwtKN5D9VBoxcIbRsAz1mzXRQI" width="100px;" alt=""/>
+    <br />
+    <sub><b>Cristiano Nogueira</b></sub></a> <a href="https://github.com/Cristiano-woody" title="Rocketseat"></a>
 </a>
 
 <a href="https://github.com/Juliocoi">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/90657177?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Júlio César Amorim</b></sub></a> <a href="hhttps://github.com/Juliocoi" title="Rocketseat"></a>
+    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/90657177?v=4" width="100px;" alt=""/>
+    <br />
+    <sub><b>Júlio César Amorim</b></sub></a> <a href="hhttps://github.com/Juliocoi" title="Rocketseat"></a>
 </a>
 
 <a href="https://github.com/LilyanGuedes">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/108057303?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Lilyan Guedes</b></sub></a> <a href="https://github.com/LilyanGuedes" title="Rocketseat"></a>
+    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/108057303?v=4" width="100px;" alt=""/>
+    <br />
+    <sub><b>Lilyan Guedes</b></sub></a> <a href="https://github.com/LilyanGuedes" title="Rocketseat"></a>
 </a>
 </div>
 
