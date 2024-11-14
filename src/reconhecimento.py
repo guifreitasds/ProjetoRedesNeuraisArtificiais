@@ -2,8 +2,8 @@ import cv2
 from deepface import DeepFace
 
 # Lista de imagens conhecidas e nomes associados
-known_face_images = ["./imagesdb/eugui.jpeg", "./imagesdb/dido.jpeg", "./imagesdb/dido2.jpeg"]
-known_face_names = ["Guilherme Freitas", "Danilo Pereira", "Danilo Pereira"]
+known_face_images = ["./imagesdb/gui1.jpeg","./imagesdb/dido1.jpeg", "./imagesdb/dido2.jpeg", "./imagesdb/julio1.jpeg", "./imagesdb/julio2.jpeg", "./imagesdb/cristiano.jpeg"]
+known_face_names = ["Guilherme Freitas", "Danilo Pereira", "Danilo Pereira", "Julio Cesar", "Julio Cesar", "Ueslei Cristiano"]
 #model_name = "VGG-Face"
 #model_name = "OpenFace"
 #model_name = "DeepID"
@@ -40,16 +40,13 @@ while True:
                     last_recognized_name = name  # Armazena o nome do rosto reconhecido
                     recognition_counter = recognition_timeout  # Reseta o contador
                     break
-            
-            # Exibir o nome e caixa ao redor do rosto
-            cv2.putText(frame, name, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
         except Exception as e:
             pass
 
     else:
         # Exibir o último rosto reconhecido sem fazer um novo reconhecimento
-        cv2.putText(frame, last_recognized_name, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
+        cv2.putText(frame, last_recognized_name, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 20, 0), 2, cv2.LINE_AA)
         recognition_counter -= 1  # Decrementa o contador
 
 
