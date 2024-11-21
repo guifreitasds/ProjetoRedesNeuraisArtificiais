@@ -2,8 +2,8 @@ import cv2
 from deepface import DeepFace
 
 # Lista de imagens conhecidas e nomes associados
-known_face_images = ["./imagesdb/gui1.jpeg","./imagesdb/dido1.jpeg", "./imagesdb/dido2.jpeg", "./imagesdb/julio1.jpeg", "./imagesdb/julio2.jpeg", "./imagesdb/cristiano.jpeg", "./imagesdb/pedro1.png"]
-known_face_names = ["Guilherme Freitas", "Danilo Pereira", "Danilo Pereira", "Julio Cesar", "Julio Cesar", "Ueslei Cristiano", "Pedro Rodrigues"]
+known_face_images = ["./imagesdb/gui1.jpeg","./imagesdb/dido1.jpeg", "./imagesdb/dido2.jpeg", "./imagesdb/julio1.jpeg", "./imagesdb/cristiano1.jpeg", "./imagesdb/pedro1.png"]
+known_face_names = ["Guilherme Freitas", "Danilo Pereira", "Danilo Pereira", "Julio Cesar", "Ueslei Cristiano", "Pedro Rodrigues"]
 #model_name = "VGG-Face"
 #model_name = "OpenFace"
 #model_name = "DeepID"
@@ -18,6 +18,7 @@ recognition_counter = 0
 known_face_embeddings = []
 for image_path in known_face_images:
     embedding = DeepFace.represent(img_path=image_path, model_name=model_name)[0]["embedding"]
+    #print(embedding)
     known_face_embeddings.append(embedding)
 
 
@@ -34,10 +35,10 @@ while True:
                 img_path=frame,
                 actions=['age', 'gender', 'race', 'emotion']
             )
-            print(objs)
+            #print(objs)
             name = "Desconhecido"
             for idx, known_embedding in enumerate(known_face_embeddings):
-                result = DeepFace.verify(known_embedding, frame_embedding, model_name=model_name, distance_metric="cosine")
+                result = DeepFace.verify(known_embedding, frame_embedding, model_name=model_name, distance_metric="euclidean_l2", align=False)
                 
                 if result["verified"]:
                     name = known_face_names[idx]
