@@ -10,7 +10,7 @@ known_face_names = ["Guilherme Freitas", "Danilo Pereira", "Danilo Pereira", "Ju
 model_name = "Facenet512"
 
 last_recognized_name = "Unknown"
-recognition_timeout = 100  # Número de frames para reter o rosto reconhecido
+recognition_timeout = 150  # Número de frames para reter o rosto reconhecido
 recognition_counter = 0
 
 
